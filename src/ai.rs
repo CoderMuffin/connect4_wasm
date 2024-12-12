@@ -3,12 +3,12 @@ use wasm_bindgen::prelude::*;
 use crate::Game;
 
 const PLAYERS: i8 = 2;
-const INF: i8 = i8::MAX;
+const INF: i8 = 50;
 
 #[wasm_bindgen]
 pub struct AIMove {
-    value: i8,
-    column: usize
+    pub value: i8,
+    pub column: usize
 }
 
 #[wasm_bindgen]
